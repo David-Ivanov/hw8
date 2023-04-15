@@ -1,0 +1,266 @@
+body {
+  background-color: #FFFFFF;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  display: inline-block;
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo__span {
+  color: #2196F3;
+}
+
+.instagram,
+.linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter {
+  width: 20px;
+  height: 16px;
+}
+
+.facebook {
+  width: 10px;
+  height: 20px;
+}
+
+.hidden {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.portfolio {
+  padding: 94px 0;
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+    height: 60px;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    overflow: hidden;
+    padding: 48px 40px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+}
+.header__overlay.is-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  color: #212121;
+}
+
+.header__menu--btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__menu--btn {
+    display: none;
+  }
+}
+.header__menu--btn .header__cross {
+  display: none;
+}
+.header__menu--btn.is-open .header__cross {
+  display: block;
+}
+.header__menu--btn.is-open .header__menu {
+  display: none;
+}
+.header__menu--btn.is-open {
+  z-index: 1;
+}
+.header__menu--btn:hover .header__menu, .header__menu--btn:hover .header__cross {
+  fill: #2196F3;
+  stroke: #2196F3;
+}
+.header__menu--btn.is-open {
+  position: fixed;
+  left: 90%;
+}
+
+.info {
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .info {
+    margin-bottom: 64px;
+  }
+}
+.info__icon-mail {
+  width: 14px;
+  height: 10px;
+}
+.info__icon-tel {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (max-width: 768px) {
+  .info__icon-mail, .info__icon-tel {
+    display: none;
+  }
+}
+.info__mail, .info__tel {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+@media screen and (max-width: 768px) {
+  .info__mail, .info__tel {
+    font-size: 24px;
+    line-height: 1.16;
+    transition: font-size 500ms ease-in, line-height 500ms ease-in, color 500ms ease-in;
+  }
+}
+.info__mail:hover, .info__tel:hover {
+  color: #2196F3;
+}
+@media screen and (max-width: 768px) {
+  .info__mail:hover, .info__tel:hover {
+    font-size: 34px;
+    line-height: 1.17;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info__item:first-child {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__item {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.nav__link.nav__link--active {
+  color: #2196F3;
+}
+.nav__link {
+  color: #212121;
+}
+.nav__link:hover {
+  color: #2196F3;
+}
+
+.socials-mobile {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .socials-mobile {
+    display: none;
+  }
+}
+.socials-mobile__item:not(:last-child)::after {
+  content: "";
+  height: 22px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin: 0 10px;
+}
+.socials-mobile__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+.socials-mobile {
+    display: flex;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+
+    &__item:not(:last-child)::after {
+        content: '';
+
+        height: 22px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+        margin: 0 10px;
+    }
+
+    &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $acent-color;
+    }
+}

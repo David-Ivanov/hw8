@@ -1,0 +1,54 @@
+.header {
+
+
+    border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width: $tablet) {
+        position: relative;
+        height: 60px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+
+        @media screen and (max-width: $tablet) {
+            justify-content: space-between;
+        }
+
+    }  
+
+    // mobile navigation and information position
+
+    &__overlay {
+        @media screen and (max-width: $tablet) {
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            display: none;
+            overflow: hidden;
+
+            padding: 48px 40px;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: $primary-color;
+        }
+    }
+
+    &__overlay.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,38 @@
+.header {
+    // burger menu icon
+    &__menu--btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }   
+    }
+
+    &__menu--btn &__cross {
+        display: none;
+    }
+    &__menu--btn.is-open &__cross {
+        display: block;
+    }
+    &__menu--btn.is-open &__menu {
+        display: none;
+    }
+    &__menu--btn.is-open {
+        z-index: 1;
+    }
+
+    &__menu--btn:hover &__menu,
+    &__menu--btn:hover &__cross {
+        fill: $acent-color;
+        stroke: $acent-color;
+    }
+
+    // fixed and positions burger menu
+
+    &__menu--btn.is-open {
+        position: fixed;
+        left: 90%;
+    }  
+
+}

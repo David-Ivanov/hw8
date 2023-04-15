@@ -1,0 +1,31 @@
+.nav {
+    @media screen and (max-width: $tablet) {
+        display: block;
+
+    }
+    &__item {
+        @media screen and (max-width: $tablet) {
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    &__link.nav__link--active { 
+        color: $acent-color; 
+    }
+
+    &__link {
+        color: $titles-color;
+    }
+
+    &__link:hover {
+        color: $acent-color;
+    }
+}

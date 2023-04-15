@@ -1,5 +1,5 @@
 body {
-    background-color: var(--primary-bg-color);
+    background-color: $primary-color;
     color: #757575;
 
     font-family: 'Roboto', sans-serif;
@@ -33,10 +33,35 @@ p {
     margin: 0;
 }
 
-.container{
-    width: 1216px;
-    padding: 0 20px;
-    margin: 0 auto;
+
+.container {
+    margin-right: 15px;
+    margin-left: 15px;
+    @media screen and (min-width: $desktop) {       
+        width: 1170px;
+        margin: 0 auto;    
+    }
+}    
+
+// logo
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    display: inline-block;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    &__span {
+        color: $acent-color;
+    }
 }
 
 // icons
@@ -55,13 +80,19 @@ p {
     height: 20px;
 }
 
-// hidden chekboxes
+// hidden
 
 .hidden{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
 // portfolio
 

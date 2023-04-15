@@ -1,0 +1,59 @@
+.info {
+    display: inline-block;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 64px;
+    }
+
+    // icons
+
+    &__icon-mail {
+        width: 14px;
+        height: 10px;
+    }
+
+    &__icon-tel {
+        width: 10px;
+        height: 14px;
+    }
+
+    &__icon-mail,
+    &__icon-tel {
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    // text
+
+    &__mail,
+    &__tel {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: $titles-color;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 24px;
+        line-height: 1.16;
+
+        transition: font-size 500ms ease-in, line-height 500ms ease-in, color 500ms ease-in;
+    }
+    }
+
+    &__mail:hover,
+    &__tel:hover {
+        color: $acent-color;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 34px;
+            line-height: 1.17;
+        }
+    }
+
+    &__item:first-child {
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 32px; 
+        }
+    }
+}
