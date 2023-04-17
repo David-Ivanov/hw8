@@ -1,0 +1,17 @@
+.team {
+    padding: 60px 0;
+    margin-bottom: 60px;
+
+    background-color: #F5F4FA;
+
+    &__title {
+        margin-bottom: $primary-gap;
+
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+
+        color: $titles-color;
+    }
+}

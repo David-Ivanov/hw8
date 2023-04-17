@@ -1,0 +1,26 @@
+.benefits {
+    margin-bottom: 60px;
+    
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 30px;
+
+        height: 120px;
+        width: 100%;
+
+        border-radius: 4px;
+        background-color: #F5F4FA;
+    }
+
+    &__icon { 
+        height: 70px;
+        width: 70px;
+    }
+}

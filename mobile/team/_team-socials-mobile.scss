@@ -1,0 +1,28 @@
+.socials {
+    margin-bottom: 24px;
+
+    text-align: center;
+
+    &__link {
+        display: inline-block;
+
+        padding: 12px;
+
+        height: 44px;
+        width: 44px;
+
+        fill: $logos-color;
+        stroke: $logos-color;
+    }
+    &__link:not(:last-child) {
+        margin-right: 10px;
+    }
+    &__link:hover {
+        fill: $acent-color;
+        stroke: $acent-color;
+    }
+
+    &__icon {
+        display: inline-block;
+    }
+}

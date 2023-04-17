@@ -7,9 +7,31 @@
 
 // mobile header
 
-@import "../mobile/header-mobile";
-@import "../mobile/header-logo-mobile";
-@import "../mobile/header-menu-mobile";
-@import "../mobile/header-info-mobile";
-@import "../mobile/header-nav-mobile";
-@import "../mobile/header-socials-mobile";
+@import "../mobile/header/header-mobile";
+@import "../mobile/header/header-logo-mobile";
+@import "../mobile/header/header-menu-mobile";
+@import "../mobile/header/header-info-mobile";
+@import "../mobile/header/header-nav-mobile";
+@import "../mobile/header/header-socials-mobile";
+
+// mobile hero
+
+@import "../mobile/hero/hero-mobile";
+@import "../mobile/hero/hero-button-mobile";
+
+// mobile benefits
+
+@import "../mobile/benefits/benefits-pictures-mobile";
+@import "../mobile/benefits/benefits-text-mobile";
+
+// mobile team 
+
+@import "../mobile/team/team-mobile";
+@import "../mobile/team/team-card-mobile";
+@import "../mobile/team/team-imges-mobile";
+@import "../mobile/team/team-text-mobile";
+@import "../mobile/team/team-socials-mobile";
+
+// work-list for mobile and tablet
+
+@import "../mobile/work-list/work-list-mobile-and-tablet";

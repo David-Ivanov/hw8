@@ -1,0 +1,5 @@
+.work-list {
+    @media screen and (max-width: $desktop) {
+        display: none;
+    }
+}

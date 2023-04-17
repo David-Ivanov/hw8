@@ -1,0 +1,21 @@
+.team {
+    &__name {
+        margin-bottom: 10px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+
+        color: $titles-color;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+    }
+}
