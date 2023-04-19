@@ -1,0 +1,46 @@
+.footer {
+    // title
+
+    &__title {
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: $ptimary-letter-height;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $primary-color;
+    }
+
+    // buttons
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 60px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $primary-color;
+    }
+    &__link:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        fill: $primary-color;
+        stroke: $primary-color;
+    }
+}

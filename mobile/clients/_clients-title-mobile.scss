@@ -1,16 +1,10 @@
-.team {
-    padding: 60px 0;
-
-    background-color: #F5F4FA;
-
+.clients {
     &__title {
         margin-bottom: $primary-gap;
-
+        
         font-weight: 700;
         font-size: 28px;
         line-height: 1.17;
         text-align: center;
-
-        color: $titles-color;
     }
 }

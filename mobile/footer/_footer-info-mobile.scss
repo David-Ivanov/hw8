@@ -1,0 +1,40 @@
+.footer {
+    &__info {
+        margin-bottom: 60px;
+    }
+
+    &__info--item {
+        text-align: center;
+    }
+
+    &__info--item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    // text 
+
+    &__address,
+    &__mail,
+    &__tel {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__address {
+        color: $primary-color;
+    }
+
+    // hover
+
+    &__address:hover,
+    &__mail:hover,
+    &__tel:hover,
+    &__address:focus,
+    &__mail:focus,
+    &__tel:focus {
+        color: $acent-color;
+    }
+
+}

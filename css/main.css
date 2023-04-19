@@ -46,7 +46,6 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   display: inline-block;
 }
 @media screen and (min-width: 1600px) {
@@ -130,7 +129,7 @@ p {
 }
 .header__box {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -165,7 +164,8 @@ p {
 }
 .header__menu--btn.is-open {
   position: fixed;
-  left: 90%;
+  left: 0;
+  margin-left: 88%;
 }
 
 .info {
@@ -245,6 +245,7 @@ p {
 
 .socials-mobile {
   display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .socials-mobile {
@@ -269,7 +270,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
   background-image: url("/hw8/images/hero-mobile.jpg");
   background-size: cover;
   height: 480px;
@@ -309,7 +309,7 @@ p {
 }
 
 .benefits {
-  margin-bottom: 60px;
+  padding: 60px 0;
 }
 .benefits__item:not(:last-child) {
   margin-bottom: 30px;
@@ -345,7 +345,6 @@ p {
 
 .team {
   padding: 60px 0;
-  margin-bottom: 60px;
   background-color: #F5F4FA;
 }
 .team__title {
@@ -412,6 +411,168 @@ p {
 }
 .socials__icon {
   display: inline-block;
+}
+
+.clients {
+  padding: 60px 0;
+}
+
+.clients__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients__position {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 30px) / 2);
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients__box:nth-child(odd) {
+  margin-right: 30px;
+}
+.clients__box:nth-last-child(n+3) {
+  margin-bottom: 30px;
+}
+.clients__logo {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  stroke: transparent;
+}
+.clients__box:hover {
+  border-color: #2196F3;
+}
+.clients__box:hover .clients__logo {
+  fill: #2196F3;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #2F303A;
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.footer__info {
+  margin-bottom: 60px;
+}
+.footer__info--item {
+  text-align: center;
+}
+.footer__info--item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer__address, .footer__mail, .footer__tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__address {
+  color: #FFFFFF;
+}
+.footer__address:hover, .footer__mail:hover, .footer__tel:hover, .footer__address:focus, .footer__mail:focus, .footer__tel:focus {
+  color: #2196F3;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+.footer__link:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__icon {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}
+
+.footer__form {
+  text-align: center;
+}
+.footer__input {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.footer__input::-moz-placeholder {
+  display: inline-block;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__input::placeholder {
+  display: inline-block;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+.footer__input:focus {
+  border-color: #2196F3;
 }
 
 @media screen and (max-width: 1600px) {

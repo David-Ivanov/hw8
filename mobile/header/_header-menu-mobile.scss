@@ -32,7 +32,8 @@
 
     &__menu--btn.is-open {
         position: fixed;
-        left: 90%;
+        left: 0;
+        margin-left: 88%;
     }  
 
 }

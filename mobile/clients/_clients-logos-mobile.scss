@@ -1,0 +1,41 @@
+.clients {
+    &__position {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: calc((100% - 30px) / 2);
+        height: 92px;
+
+        border: 1px solid $logos-color;
+        border-radius: 4px;
+    }
+    &__box:nth-child(odd) {
+        margin-right: $primary-gap;
+    }
+    &__box:nth-last-child(n+3) {
+        margin-bottom: $primary-gap;
+    }
+
+    &__logo {
+        width: 106px;
+        height: 60px;
+    
+        fill: $logos-color;
+        stroke: transparent;
+    }
+
+    // hover
+
+    &__box:hover {
+        border-color: $acent-color;
+    }
+    &__box:hover &__logo {
+        fill: $acent-color;
+    }
+}

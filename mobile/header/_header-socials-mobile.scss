@@ -1,5 +1,6 @@
 .socials-mobile {
     display: flex;
+    flex-wrap: wrap;
 
     @media screen and (min-width: $tablet) {
         display: none;
