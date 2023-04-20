@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="./sass/portfolio.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container container">
 
-        <a class="header__logo" href="./index.html"><span class="header__logo--span">Web</span>Studio</a>
+        <a class="logo header__logo" href="./index.html"><span class="logo__span">Web</span>Studio</a>
+
+        <button type="button" class="header__menu--btn" data-menu-button>
+        <svg  width="40px" height="40px" aria-label="переключатель мобильного меню">
+            <use class="header__menu" href="./images/symbol-defs.svg#menu-mobile"></use>
+            <use class="header__cross" href="./images/symbol-defs.svg#close-mobile"></use>
+        </svg>
+</button>
+
+        <div class="header__overlay" data-menu>
 
         <ul class="nav list">
             <li class="nav__item">
-                <a class="nav__link" href="./index.html" >Студія</a>
+                <a class="nav__link nav__link--active" href="./index.html" >Студія</a>
             </li>
-            <li class="nav__item nav__item--active">
+            <li class="nav__item">
                 <a class="nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item">
@@ -28,6 +36,7 @@
             </li>
         </ul>
 
+        <div class="header__box">
         <ul class="info list">
             <li class="info__item">
 
@@ -45,7 +54,31 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+
+        <!-- mobile socials -->
+
+        <ul class="socials-mobile list">
+            <li class="socials-mobile__item">
+                <a href="" class="socials-mobile__link">Instagram</a>
+            </li>
+        
+            <li class="socials-mobile__item">
+                <a href="" class="socials-mobile__link">Twitter</a>
+            </li>
+        
+            <li class="socials-mobile__item">
+                <a href="" class="socials-mobile__link">Facebook</a>
+            </li>
+        
+            <li class="socials-mobile__item">
+                <a href="" class="socials-mobile__link">LinkedIn</a>
+            </li>
+        </ul>
     </div>
+ 
+    </div>
+</div>
+</div>
     </header>
     
     <main>
@@ -186,17 +219,17 @@
 </main>
 
 <footer class="footer">
-    <div class="container footer__flex">
+    <div class="container footer__position">
         <div class="footer__info">
-        <a class="footer__logo" href=""><span class="footer__logo--span">Web</span>Studio</a>
+        <a class="footer__logo logo" href=""><span class="footer__logo--span logo__span">Web</span>Studio</a>
         <ul class="list">
-            <li>
+            <li class="footer__info--item">
                 <a class="footer__address" href="https://goo.gl/maps/ThywqEjot6tUFqHi9">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
-            <li>
+            <li class="footer__info--item">
                 <a class="footer__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="footer__info--item">
                 <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
@@ -206,22 +239,22 @@
     <div class="footer__socials">
         
         <a class="footer__link" href="">
-             <svg class="instagram">
+             <svg class="footer__icon instagram">
                  <use href="./images/symbol-defs.svg#instagram"></use>
              </svg>
         </a>
         <a class="footer__link" href="">
-             <svg class="twitter">
+             <svg class="footer__icon twitter">
                  <use href="./images/symbol-defs.svg#twitter"></use>
              </svg>
         </a>
         <a class="footer__link" href="">
-             <svg class="facebook">
+             <svg class="footer__icon facebook">
                  <use href="./images/symbol-defs.svg#facebook"></use>
              </svg>
         </a>
         <a class="footer__link" href="">
-             <svg class="linkedin">
+             <svg class="footer__icon linkedin">
                  <use href="./images/symbol-defs.svg#linkedin"></use>
              </svg>
     </a>
@@ -233,13 +266,15 @@
 
 <form class="footer__form">
     <input class="footer__input" type="email" placeholder="E-mail">
-    <button class="footer__btn" type="submit">Підписатися <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
-</svg>
+    <button class="footer__btn" type="submit">Підписатися 
+        <svg class="footer__send-icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#send-icon"></use>
+        </svg>
 </button>
 </form>
 </div>
 </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

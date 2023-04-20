@@ -114,7 +114,8 @@ p {
     position: fixed;
     left: 0;
     top: 0;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     overflow: hidden;
     padding: 48px 40px;
     width: 100vw;
@@ -126,6 +127,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 500ms linear;
 }
 .header__box {
   display: flex;
@@ -147,13 +151,14 @@ p {
   }
 }
 .header__menu--btn .header__cross {
-  display: none;
+  opacity: 0;
 }
 .header__menu--btn.is-open .header__cross {
-  display: block;
+  opacity: 1;
+  transition: opacity 500ms linear;
 }
 .header__menu--btn.is-open .header__menu {
-  display: none;
+  opacity: 0;
 }
 .header__menu--btn.is-open {
   z-index: 1;
@@ -582,11 +587,21 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 1;
+  transition: opacity 500ms linear;
+  pointer-events: all;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms linear;
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transition: opacity 500ms linear;
 }
 
 .modal {
@@ -596,6 +611,8 @@ p {
   padding: 8px 40px 40px 40px;
   top: 50%;
   left: 50%;
+  opacity: 1;
+  transition: opacity 500ms linear;
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);

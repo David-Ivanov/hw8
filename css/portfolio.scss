@@ -1,0 +1,23 @@
+@import "../utilits/variables";
+@import "../base/common";
+@import "../utilits/extend";
+@import "../utilits/mixin";
+
+// mobile
+
+// mobile header
+
+@import "../mobile/header/header-mobile";
+@import "../mobile/header/header-logo-mobile";
+@import "../mobile/header/header-menu-mobile";
+@import "../mobile/header/header-info-mobile";
+@import "../mobile/header/header-nav-mobile";
+@import "../mobile/header/header-socials-mobile";
+
+// mobile footer
+
+@import "../mobile/footer/footer-moblile";
+@import "../mobile/footer/footer-logo-mobile";
+@import "../mobile/footer/footer-info-mobile";
+@import "../mobile/footer/footer-socials-mobile";
+@import "../mobile/footer/footer-form-mobile";
