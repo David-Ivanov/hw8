@@ -86,10 +86,6 @@ p {
   pointer-events: none;
 }
 
-.portfolio {
-  padding: 94px 0;
-}
-
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -587,21 +583,24 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transform-origin: center center;
   opacity: 1;
-  transition: opacity 500ms linear;
+  transition: transform 250ms linear;
   pointer-events: all;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
+  transform: scale(0);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 500ms linear;
+  transition: transform 250ms linear;
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
-  transition: opacity 500ms linear;
+  transition: opacity 250ms linear;
 }
 
 .modal {
@@ -612,7 +611,7 @@ p {
   top: 50%;
   left: 50%;
   opacity: 1;
-  transition: opacity 500ms linear;
+  transition: opacity 250ms linear;
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
