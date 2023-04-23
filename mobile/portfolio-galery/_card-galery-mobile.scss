@@ -5,10 +5,12 @@
     &:not(:last-child) {
         margin-bottom: $primary-gap;
     }
-    
+
     &__box {
         position: relative;
 
         overflow: hidden;
+
+        z-index: -1;
     }
 }
