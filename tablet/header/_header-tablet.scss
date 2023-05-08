@@ -1,0 +1,15 @@
+.header {
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+    
+    &__container {
+            justify-content: space-between;
+            align-items: center;
+        
+    }
+    &__overlay {
+            display: none;
+        
+    }
+}
+}

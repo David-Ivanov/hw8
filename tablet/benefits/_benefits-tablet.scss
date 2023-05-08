@@ -1,0 +1,15 @@
+.benefits {
+    @media screen and (min-width: $tablet) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &__item {
+            width: calc((100% - 30px) / 2);
+        }
+        &__item:nth-child(odd) {
+            margin-right: 30px;
+        }
+    }
+}

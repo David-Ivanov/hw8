@@ -92,3 +92,11 @@ p {
     visibility: hidden;
     pointer-events: none;
   }
+
+//   mobile
+
+.mobile-none {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}

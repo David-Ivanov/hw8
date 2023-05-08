@@ -16,16 +16,7 @@
 
         <a class="logo header__logo" href="./index.html"><span class="logo__span">Web</span>Studio</a>
 
-        <button type="button" class="header__menu--btn" data-menu-button>
-        <svg  width="40px" height="40px" aria-label="переключатель мобильного меню">
-            <use class="header__menu" href="./images/symbol-defs.svg#menu-mobile"></use>
-            <use class="header__cross" href="./images/symbol-defs.svg#close-mobile"></use>
-        </svg>
-</button>
-
-        <div class="header__overlay" data-menu>
-
-        <ul class="nav list">
+        <ul class="header__nav list mobile-none">
             <li class="nav__item">
                 <a class="nav__link nav__link--active" href="./index.html" >Студія</a>
             </li>
@@ -39,7 +30,7 @@
 
         <div class="header__box">
         <ul class="info list">
-            <li class="info__item">
+            <li class="info__item mobile-none">
 
                 <a class="info__mail" href="mailto:info@devstudio.com">
                     <svg class="info__icon-mail">
@@ -47,7 +38,7 @@
                      </svg>  
                     info@devstudio.com</a>
             </li>
-            <li class="info__item">
+            <li class="info__item mobile-none">
                 <a class="info__tel" href="tel:+380961111111">
                     <svg class="info__icon-tel">
                         <use href="./images/symbol-defs.svg#tel"></use>
@@ -56,29 +47,71 @@
             </li>
         </ul>
 
-        <!-- mobile socials -->
-
-        <ul class="socials-mobile list">
-            <li class="socials-mobile__item">
-                <a href="" class="socials-mobile__link">Instagram</a>
-            </li>
-        
-            <li class="socials-mobile__item">
-                <a href="" class="socials-mobile__link">Twitter</a>
-            </li>
-        
-            <li class="socials-mobile__item">
-                <a href="" class="socials-mobile__link">Facebook</a>
-            </li>
-        
-            <li class="socials-mobile__item">
-                <a href="" class="socials-mobile__link">LinkedIn</a>
-            </li>
-        </ul>
-    </div>
- 
-    </div>
 </div>
+        <!-- mobile elements -->
+
+        <button type="button" class="header__menu--btn" data-menu-button>
+            <svg  width="40px" height="40px" aria-label="переключатель мобильного меню">
+                <use class="header__menu" href="./images/symbol-defs.svg#menu-mobile"></use>
+                <use class="header__cross" href="./images/symbol-defs.svg#close-mobile"></use>
+            </svg>
+    </button>
+    
+            <div class="header__overlay" data-menu>
+    
+            <ul class="nav list">
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="./index.html" >Студія</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Контакти</a>
+                </li>
+            </ul>
+    
+            <div class="header__box">
+            <ul class="info list">
+                <li class="info__item">
+    
+                    <a class="info__mail" href="mailto:info@devstudio.com">
+                        <svg class="info__icon-mail">
+                            <use href="./images/symbol-defs.svg#mail"></use>
+                         </svg>  
+                        info@devstudio.com</a>
+                </li>
+                <li class="info__item">
+                    <a class="info__tel" href="tel:+380961111111">
+                        <svg class="info__icon-tel">
+                            <use href="./images/symbol-defs.svg#tel"></use>
+                         </svg>  
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+    
+            <!-- mobile socials -->
+    
+            <ul class="socials-mobile list">
+                <li class="socials-mobile__item">
+                    <a href="" class="socials-mobile__link">Instagram</a>
+                </li>
+            
+                <li class="socials-mobile__item">
+                    <a href="" class="socials-mobile__link">Twitter</a>
+                </li>
+            
+                <li class="socials-mobile__item">
+                    <a href="" class="socials-mobile__link">Facebook</a>
+                </li>
+            
+                <li class="socials-mobile__item">
+                    <a href="" class="socials-mobile__link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+     
+        </div>
 </div>
     </header>
     <main>
@@ -321,6 +354,7 @@
     </main>
     <footer class="footer">
         <div class="container footer__position">
+            <div class="footer__tablet--flex">
             <div class="footer__info">
             <a class="footer__logo logo" href=""><span class="footer__logo--span logo__span">Web</span>Studio</a>
             <ul class="list">
@@ -361,11 +395,11 @@
         </a>
     </div>
 </div>
+</div>
 
-<div>
-     <h2 class="footer__title">Підпишіться на розсилку</h2>
 
     <form class="footer__form">
+        <h2 class="footer__title">Підпишіться на розсилку</h2>
         <input class="footer__input" type="email" placeholder="E-mail">
         <button class="footer__btn" type="submit">Підписатися 
             <svg class="footer__send-icon" width="24" height="24">
@@ -373,7 +407,6 @@
             </svg>
 </button>
     </form>
-</div>
 </div>
     </footer>
 

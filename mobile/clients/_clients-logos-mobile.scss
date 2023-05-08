@@ -18,8 +18,10 @@
     &__box:nth-child(odd) {
         margin-right: $primary-gap;
     }
-    &__box:nth-last-child(n+3) {
-        margin-bottom: $primary-gap;
+    @media screen and (max-width: $tablet) {
+        &__box:nth-last-child(n+3) {
+            margin-bottom: $primary-gap;
+        }
     }
 
     &__logo {

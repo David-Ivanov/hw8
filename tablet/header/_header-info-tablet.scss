@@ -1,0 +1,30 @@
+.info {
+    @media screen and (min-width: $tablet) {
+        &__mail,
+        &__tel {
+            display: inline-block;
+
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+
+            color: #757575;
+        }
+
+        &__mail {
+            margin-bottom: 10px;
+        }
+
+        &__icon-mail,
+        &__icon-tel {
+            margin-right: 8px;
+        }
+
+        &__mail:hover,
+        &__tel:hover {
+            fill: $acent-color;
+            stroke: $acent-color;
+        }
+}
+}   

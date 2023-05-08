@@ -1,0 +1,14 @@
+.clients {
+    @media screen and (min-width: $tablet) {
+        &__box {
+            margin-right: $primary-gap;
+            width: calc((100% - 60px) / 3);
+        }
+        &__box:nth-child(3n) {
+            margin-right: 0;
+        }
+        &__box:nth-child(-n+3) {
+            margin-bottom: $primary-gap;
+        }
+    }
+}

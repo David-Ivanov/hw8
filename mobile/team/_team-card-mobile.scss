@@ -12,7 +12,7 @@
 
     }
 
-    &__card:not(:last-child) {
+    &__card:not(:nth-child(n+3)) {
         margin-bottom: $primary-gap;
     }
 }

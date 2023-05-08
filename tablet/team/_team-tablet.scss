@@ -1,0 +1,15 @@
+.team {
+    @media screen and (min-width: $tablet) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: calc((100% - 30px) / 2);
+        }
+        &__card:nth-child(odd) {
+            margin-right: 30px;
+        }
+}
+}

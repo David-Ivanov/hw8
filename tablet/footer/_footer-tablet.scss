@@ -1,0 +1,14 @@
+.footer {
+    @media screen and (min-width: $tablet) {
+        &__tablet--flex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        // footer input
+
+        &__input {
+            width: 450px;
+        }
+    }
+}

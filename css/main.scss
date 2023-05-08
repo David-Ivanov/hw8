@@ -59,3 +59,29 @@
 // work-list for mobile and tablet
 
 @import "../mobile/work-list/work-list-mobile-and-tablet";
+
+// tablet
+
+// tablet header
+
+@import "../tablet/header/header-tablet";
+@import "../tablet/header/header-logo-tablet";
+@import "../tablet/header/header-nav-tablet";
+@import "../tablet/header/header-info-tablet";
+
+// tablet benefits
+
+@import "../tablet/benefits/benefits-tablet";
+@import "../tablet/benefits/benefits-text-tablet";
+
+// tablet team
+
+@import "../tablet/team/team-tablet";
+
+// tablet clients
+
+@import "../tablet/clients/clients-tablet";
+
+// tablet footer
+
+@import "../tablet/footer/footer-tablet";
