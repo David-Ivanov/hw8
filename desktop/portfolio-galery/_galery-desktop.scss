@@ -1,0 +1,20 @@
+.colection {
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
+.card {
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 30px * 2) / 3);
+
+        margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+    &:nth-last-child(3),
+    &:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+}
