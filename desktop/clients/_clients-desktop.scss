@@ -1,0 +1,12 @@
+.clients {
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+
+        &__box {
+            width: calc((100% - 30px * 5) / 6);
+        }
+        &__box:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url("/hw8/images/hero-mobile.jpg");
+    background-image: url("/images/hero-mobile.jpg");
     background-size: cover;
     height: 480px;
     background: (linear-gradient(rgba(47, 48, 58, 0.4)));
@@ -12,7 +12,7 @@
     @media screen and (min-device-pixel-ration: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url("/hw8/images/hero-mobile@2x.jpg");
+        background-image: url("/images/hero-mobile@2x.jpg");
     }
 
     // title
@@ -22,7 +22,7 @@
     font-size: 26px;
     line-height: 1.61;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em; 
     text-transform: uppercase;
 
     color: $primary-color;

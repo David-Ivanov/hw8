@@ -1,0 +1,11 @@
+.footer {
+    @media screen and (min-width: $desktop) {
+        &__socials {
+            margin-bottom: 0;
+        }
+        &__tablet--flex {
+            margin-right: 93px;
+            align-items: center;
+        }
+    }
+}

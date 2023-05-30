@@ -1,0 +1,8 @@
+.footer {
+    @media screen and (min-width: $desktop) {
+        &__info {
+            margin-right: 70px;
+            margin-bottom: 0;
+        }
+    }
+}

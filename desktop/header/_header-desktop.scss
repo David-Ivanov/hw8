@@ -1,0 +1,15 @@
+.header {
+    @media screen and (min-width: $desktop) {
+        &__container {
+            justify-content: flex-start;
+        }
+
+        &__logo {
+            margin-right: 93px;
+        }
+
+        &__nav {
+            margin-right: auto;
+        }
+    }
+}

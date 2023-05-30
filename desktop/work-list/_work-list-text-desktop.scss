@@ -1,0 +1,32 @@
+.work-list {
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $primary-color; 
+    }
+
+    // overlay
+
+    &__img {
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 70px;
+
+        background: rgba(47, 48, 58, 0.8);
+    }
+}

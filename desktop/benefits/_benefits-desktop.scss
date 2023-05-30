@@ -1,0 +1,12 @@
+.benefits {
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+        
+        &__item {
+            width: calc((100% - 30px * 3) / 4);
+        }
+        &__item:not(:last-child) {
+            margin-right: $primary-gap;
+        }
+    }
+}

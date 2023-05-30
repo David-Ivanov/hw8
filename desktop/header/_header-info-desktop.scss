@@ -1,0 +1,34 @@
+.info {
+    @media screen and (min-width: $desktop) {
+        text-align: center;
+
+        &__item {
+            display: inline-block;
+        }
+        &__item:first-child {
+            margin-right: $primary-gap;
+            margin-bottom: 0;
+
+        }
+        
+        // font
+
+        &__tel,
+        &__mail {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.14;
+        }
+
+        // icon
+
+        &__icon-mail {
+            width: 16px;
+            height: 12px;
+        }
+        &__icon-tel {
+            height: 16px;
+        }
+    }
+}

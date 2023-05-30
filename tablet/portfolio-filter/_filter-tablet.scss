@@ -1,0 +1,10 @@
+.filter {
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+    &__item {
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+        }
+    }
+} 

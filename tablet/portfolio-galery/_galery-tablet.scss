@@ -1,0 +1,17 @@
+.colection {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px) / 2);
+    }
+    &:nth-child(odd) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+        }
+    }
+}

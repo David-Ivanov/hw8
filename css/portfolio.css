@@ -34,7 +34,7 @@ p {
   margin-right: 15px;
   margin-left: 15px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .container {
     width: 1170px;
     margin: 0 auto;
@@ -48,7 +48,7 @@ p {
   line-height: 1.16;
   display: inline-block;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
@@ -449,14 +449,6 @@ p {
   background-color: transparent;
   color: #FFFFFF;
 }
-.footer__input::-moz-placeholder {
-  display: inline-block;
-  margin-left: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
-}
 .footer__input::placeholder {
   display: inline-block;
   margin-left: 16px;
@@ -485,4 +477,110 @@ p {
 }
 .footer__input:focus {
   border-color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header__container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__overlay {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__link {
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .nav__link--active {
+    position: relative;
+  }
+  .nav__link--active::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info__mail, .info__tel {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .info__item:first-child {
+    margin-bottom: 10px;
+  }
+  .info__icon-mail, .info__icon-tel {
+    margin-right: 8px;
+  }
+  .info__mail:hover, .info__tel:hover {
+    fill: #2196F3;
+    stroke: #2196F3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .colection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .card:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tablet--flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__input {
+    width: 450px;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

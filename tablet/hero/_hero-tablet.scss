@@ -1,0 +1,11 @@
+.hero {
+    @media screen and (min-width: $tablet) {
+    background-image: url("/images/hero-tablet.jpg");
+    
+        @media screen and (min-device-pixel-ration: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url("/images/hero-tablet@2x.jpg");
+        }
+    }
+}

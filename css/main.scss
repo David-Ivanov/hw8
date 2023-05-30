@@ -6,7 +6,7 @@
 // mobile
 
 // mobile header
-
+ 
 @import "../mobile/header/header-mobile";
 @import "../mobile/header/header-logo-mobile";
 @import "../mobile/header/header-menu-mobile";
@@ -69,6 +69,10 @@
 @import "../tablet/header/header-nav-tablet";
 @import "../tablet/header/header-info-tablet";
 
+// tablet hero
+
+@import "../tablet/hero/hero-tablet";
+
 // tablet benefits
 
 @import "../tablet/benefits/benefits-tablet";
@@ -85,3 +89,42 @@
 // tablet footer
 
 @import "../tablet/footer/footer-tablet";
+
+// desktop
+
+// desktop header
+
+@import "../desktop/header/header-desktop";
+@import "../desktop/header/header-info-desktop";
+
+// desktop hero 
+
+@import "../desktop/hero/hero-descktop";
+@import "../desktop/hero/hero-bg-desktop";
+
+// desctop benefits
+
+@import "../desktop/benefits/benefits-desktop";
+
+// desktop work-list
+
+@import "../desktop/work-list/work-list-desktop";
+@import "../desktop/work-list/work-list-title";
+@import "../desktop/work-list/work-list-text-desktop";
+
+// desktop team
+
+@import "../desktop/team/team-desktop";
+
+// desktop clients
+
+@import "../desktop/clients/clients-desktop";
+@import "../desktop/clients/clients-title-desktop";
+
+// desktop footer
+
+@import "../desktop/footer/footer-desktop";
+@import "../desktop/footer/footer-info-desktop";
+@import "../desktop/footer/footer-socials-desktop";
+@import "../desktop/footer/footer-form-desktop";
+

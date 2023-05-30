@@ -1,0 +1,13 @@
+.team {
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+        &__card {
+            margin-bottom: 0;
+
+            width: calc((100% - 30px * 3) / 4);
+        }
+        &__card:not(:last-child) {
+            margin-right: $primary-gap;
+        }
+    }
+}

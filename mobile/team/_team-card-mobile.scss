@@ -12,7 +12,9 @@
 
     }
 
-    &__card:not(:nth-child(n+3)) {
-        margin-bottom: $primary-gap;
+    @media screen and (max-width: $desktop) {
+        &__card:not(:nth-child(n+3)) {
+            margin-bottom: $primary-gap;
+        }
     }
 }
