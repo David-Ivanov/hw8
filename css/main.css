@@ -1091,4 +1091,10 @@ p {
   .footer__btn {
     margin: 0;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal {
+    width: 528px;
+  }
 }/*# sourceMappingURL=main.css.map */
